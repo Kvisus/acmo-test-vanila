@@ -132,6 +132,7 @@ header {
   color: var(--light-text);
   font-weight: 500;
   padding: 21px 34px;
+  cursor: pointer;
 }
 
 main p {
@@ -198,6 +199,11 @@ footer {
 .footer-links-container:nth-child(3) {
   text-align: right;
 }
+
+#footer-third .icon-container > svg {
+  margin-left: 10px;
+}
+
 #footer-rights > * {
   font-size: 12px;
 }
@@ -334,6 +340,7 @@ footer {
 @media screen and (max-width: 650px) {
   body {
     overflow-x: hidden;
+    min-width: 340px;
   }
   .wrapper {
     display: block;
