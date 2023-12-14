@@ -60,6 +60,7 @@ header {
   display: flex;
   justify-content: space-between;
   height: 100px;
+  margin-top: 20px;
 }
 
 #header-logo-container {
@@ -75,6 +76,13 @@ header {
   display: flex;
   gap: 30px;
 }
+#header-menu-important > a:hover,
+.icon-container > svg:hover {
+  scale: 1.1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 #header-contacts {
   display: flex;
   gap: 47px;
@@ -324,6 +332,9 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
   .wrapper {
     display: block;
     /* overflow: hidden; */
